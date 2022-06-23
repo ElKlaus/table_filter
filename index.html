@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS filter</title>
+  </head>
+  <style>
+    html {
+      font: 18px/1.5 sans-serif;
+    }
+
+    table {
+      color: #fff;
+      margin: 0 auto 80px;
+      background-color: #0b2136;
+    }
+
+    td,
+    th {
+      padding: 1em;
+    }
+
+    th {
+      text-align: left;
+      vertical-align: bottom;
+    }
+
+    tbody tr {
+      background-color: #24476b;
+    }
+  </style>
+  <body>
+    <div class="table">
+      <table>
+          <caption>Курсы UniPage</caption>
+            <thead>
+              <th>Наименование курса</th>
+              <th>Цена от: 
+                <input type="text" name="search_from" class="filter_input" id="search_from" placeholder="From..."/>
+              </th>
+              <th>до:
+                <input type="text" name="search_to" class="filter_input" id="search_to" placeholder="To..."/>
+              </th>
+            </thead>  
+            <tbody id="table_body">
+              <tr>
+                <td>Courses in England</td>
+                <td>0</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Courses in Germany</td>
+                <td>500</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Courses in Italy</td>
+                <td>100</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>Courses in Russia</td>
+                <td></td>
+                <td>400</td>
+              </tr>
+              <tr>
+                <td>Courses in China</td>
+                <td>50</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>Courses in USA</td>
+                <td>200</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Courses in Kazakhstan</td>
+                <td>56</td>
+                <td>324</td>
+              </tr>
+              <tr>
+                <td>Courses in France</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+      </table>      
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
